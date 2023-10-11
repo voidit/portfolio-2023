@@ -22,7 +22,7 @@
 </script>
 
 <style>
-    .chart :global(div) {
+    .chart>:global(div) {
         font: 10px sans-serif;
         background-color: steelblue;
         text-align: right;
@@ -32,4 +32,4 @@
     }
 </style>
 
-<div bind:this={el} className="chart"></div>
+<div bind:this={el} class="chart"></div>

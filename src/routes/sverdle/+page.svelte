@@ -1,6 +1,7 @@
 <script>
 	import { confetti } from '@neoconfetti/svelte';
 	import { enhance } from '$app/forms';
+	import { base } from '$app/paths';
 
 	import { reduced_motion } from './reduced-motion';
 
@@ -102,7 +103,7 @@
 		};
 	}}
 >
-	<a class="how-to-play" href="/sverdle/how-to-play">How to play</a>
+	<a class="how-to-play" href="{ base }/sverdle/how-to-play">How to play</a>
 
 	<div class="grid" class:playing={!won} class:bad-guess={form?.badGuess}>
 		{#each Array.from(Array(6).keys()) as row (row)}
