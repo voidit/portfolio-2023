@@ -5,11 +5,10 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"build-old": "vite build --base=/portfolio-2023/",
 		"preview": "vite preview",
-		"deploy-old": "pnpm build && pnpx gh-pages -d build -t true",
-		"push-old": "pnpx gh-pages -d build",
-		"publish-old": "git subtree push --prefix build origin gh-pages"
+		"deploy-gh-pages": "pnpm build && pnpx gh-pages -d build -t true",
+		"push-gh-pages": "pnpx gh-pages -d build",
+		"publish-gh-pages": "git subtree push --prefix build origin gh-pages"
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
