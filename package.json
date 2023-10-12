@@ -1,6 +1,7 @@
 {
 	"name": "portfolio-2023",
 	"version": "0.0.1",
+	"homepage": "https://voidit.github.io/portfolio-2023/",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
