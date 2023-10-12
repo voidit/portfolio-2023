@@ -20,5 +20,5 @@ jobs:
         run: |
           npm ci
           npm run build
-          cp -a build/. public/
+          cp -a ./build/. ./public/
           

@@ -66,3 +66,5 @@ export const actions = {
 		cookies.delete('sverdle');
 	}
 };
+
+export const prerender = false;
