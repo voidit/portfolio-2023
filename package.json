@@ -4,7 +4,8 @@
 	"homepage": "https://voidit.github.io/portfolio-2023/",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build --base=/portfolio-2023/",
+		"build": "vite build",
+		"build-old": "vite build --base=/portfolio-2023/",
 		"preview": "vite preview",
 		"deploy-old": "pnpm build && pnpx gh-pages -d build -t true",
 		"push-old": "pnpx gh-pages -d build",
