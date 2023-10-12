@@ -1,4 +1,4 @@
-name: Build and Deploy Simple
+name: Build and Deploy
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -16,12 +16,15 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+      - name: Install and Build 🔧 # Built using npm and outputs the result to the 'build' folder.
         run: |
           npm ci
           npm run build
+          cp -a ./build/. ./public/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build # The folder the action should deploy.
+          folder: build
+          
+          
