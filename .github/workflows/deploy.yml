@@ -21,4 +21,9 @@ jobs:
           npm ci
           npm run build
           cp -a ./build/. ./public/
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
           
