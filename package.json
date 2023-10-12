@@ -7,7 +7,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"deploy": "pnpm build && pnpx gh-pages -d build -t true",
-		"push": "pnpx gh-pages -d build"
+		"push": "pnpx gh-pages -d build",
+		"publish": "git subtree push --prefix build origin gh-pages"
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",

@@ -9,7 +9,11 @@ const config = {
 			fallback: '400.html' // may differ from host to host
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'github-pages' ? '/portfolio-2023/' : '',
+			base: process.env.NODE_ENV === ('github-pages' || 'production') ? '/portfolio-2023/' : '',
+			assets: process.env.NODE_ENV === ('github-pages' || 'production') ? '/portfolio-2023/' : '',
+			// base: '' | `/portfolio-2023/` | `https://voidit.github.io/portfolio-2023/`,
+			// assets: '' | `/portfolio-2023/` | `https://voidit.github.io/portfolio-2023/`,
+			relative: true,
 		},
 		prerender: {
 			handleHttpError: ({ path, referrer, message }) => {
