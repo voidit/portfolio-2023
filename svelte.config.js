@@ -10,7 +10,7 @@ const config = {
 			fallback: '400.html' // may differ from host to host
 		}),
 		paths: {
-			// base: process.env.NODE_ENV === 'github-pages' ? '/portfolio-2023/' : '',
+			base: process.env.NODE_ENV === 'github-pages' ? '/portfolio-2023/' : '',
 		},
 		prerender: {
 			handleHttpError: ({ path, referrer, message }) => {
