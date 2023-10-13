@@ -1,13 +1,12 @@
 <script>
-    // `current` is updated whenever the prop value changes...
     export let title;
-    export let id;
-
-    // ...but `initial` is fixed upon initialisation
-    const name = title;
+    export let vid;
+    const slug = `${title}`.trim().replace(' ', '+');
 </script>
 
-<a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v={id}"> {name} </a>
+<div class="project {slug}">
+    <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v={vid}"> {title} </a>
+</div>
 
 <style>
 </style>

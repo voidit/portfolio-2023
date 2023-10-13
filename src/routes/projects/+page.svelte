@@ -9,7 +9,7 @@
 
 <ul>
     {#each cats as { id, name }, i}
-        <li><Project title={name} id="{id}" /></li>
+        <li><Project title={name} vid="{id}" /></li>
     {/each}
 </ul>
 
