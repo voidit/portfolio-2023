@@ -35,6 +35,9 @@
 			<li aria-current={$page.url.pathname.startsWith('/d3') ? 'page' : undefined}>
 				<a href="{base}/d3">D3</a>
 			</li>
+			<li aria-current={$page.url.pathname.startsWith('/projects') ? 'page' : undefined}>
+				<a href="{base}/projects">Projects</a>
+			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
